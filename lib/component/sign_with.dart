@@ -23,7 +23,7 @@ class SignWithWidget extends StatelessWidget {
           children: [
             Container(
               height: 2,
-              width: (width - 88) / 3,
+              width: (width - (width * 0.12) * 2) / 3,
               color: lightGrey,
             ),
             SizedBox(width: width * 0.04),
@@ -34,7 +34,7 @@ class SignWithWidget extends StatelessWidget {
             SizedBox(width: width * 0.04),
             Container(
               height: 2,
-              width: (width - (width * 0.06) * 2) / 3,
+              width: (width - (width * 0.12) * 2) / 3,
               color: lightGrey,
             )
           ],

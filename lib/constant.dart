@@ -8,7 +8,8 @@ width * 0.06 >> 24px
 height * 0.10 >> padding
 height * 0.085 >> 72px
 height * 0.04 >> 32px
-height * 0.03 >>24px
+height * 0.03 >> 24px
+height * 0.02 >> 16px
 height * 0.01 >> 8px
 */
 
@@ -23,7 +24,7 @@ const smallBlackTextStyle =
     TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.normal);
 
 const textBoxTitleTextStyle =
-    TextStyle(fontSize: 16, fontWeight: FontWeight.w200, color: Colors.grey);
+    TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: Colors.grey);
 
 const smallGreyTextStyle =
     TextStyle(fontSize: 14, fontWeight: FontWeight.w200, color: Colors.grey);
