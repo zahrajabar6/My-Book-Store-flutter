@@ -46,14 +46,14 @@ class SignWithWidget extends StatelessWidget {
             MyContainer(
               width: width,
               height: height,
-              imgURL: 'assets/google_icon.png',
+              imgURL: 'assets/images/google_icon.png',
               text: 'GOOGLE',
             ),
             SizedBox(width: width * 0.04),
             MyContainer(
               width: width,
               height: height,
-              imgURL: 'assets/facebook_icon.png',
+              imgURL: 'assets/images/facebook_icon.png',
               text: 'FACEBOOK',
             )
           ],
