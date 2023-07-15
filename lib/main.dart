@@ -16,15 +16,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
             centerTitle: true,
             color: Colors.transparent,
             systemOverlayStyle: SystemUiOverlayStyle(
-              statusBarColor: Colors.transparent,
-              systemNavigationBarColor: Colors.transparent,
+              statusBarColor: Colors.grey.shade50,
+              systemNavigationBarColor: Colors.grey.shade50,
               statusBarIconBrightness: Brightness.dark,
             ),
-            titleTextStyle: TextStyle(
+            titleTextStyle: const TextStyle(
                 color: Colors.black,
                 fontSize: 22,
                 fontWeight: FontWeight.w600)),

@@ -3,6 +3,7 @@ import 'package:book_store/constant.dart';
 import 'package:book_store/models/book.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,8 +34,7 @@ class HomePage extends StatelessWidget {
                   child: TextField(
                     decoration: kTextFieldDecoration.copyWith(
                         prefixIcon: const Icon(
-                          CupertinoIcons.search,
-                          size: 30,
+                          Iconsax.search_normal_1,
                           color: mainBlack,
                         ),
                         hintText: 'Find your favorite book..',

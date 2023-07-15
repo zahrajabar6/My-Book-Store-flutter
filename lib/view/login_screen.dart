@@ -1,6 +1,6 @@
 import 'package:book_store/component/my_button.dart';
 import 'package:book_store/component/sign_with.dart';
-import 'package:book_store/view/home_screen.dart';
+import 'package:book_store/view/main_pages.dart';
 import 'package:book_store/view/signup_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -67,7 +67,7 @@ class LoginPage extends StatelessWidget {
             MyButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const HomePage()));
+                    MaterialPageRoute(builder: (context) => const MyPages()));
               },
               text: 'LOGIN',
               height: height,
