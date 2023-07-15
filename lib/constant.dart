@@ -23,6 +23,11 @@ const Color greyLv3 = Color.fromRGBO(189, 189, 189, 1); //darkish
 
 const bigTitleTextStyle = TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
 
+const bookAuthorStyle =
+    TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.grey);
+
+const bookTitleStyle = TextStyle(fontSize: 14, fontWeight: FontWeight.bold);
+
 const smallBlackTextStyle =
     TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.normal);
 

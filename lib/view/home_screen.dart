@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../component/book_card.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -59,7 +61,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         SizedBox(
-          height: height * 0.30,
+          height: height * 0.14,
           child: ListView(
               scrollDirection: Axis.horizontal,
               children: Book.categories
@@ -71,6 +73,23 @@ class HomePage extends StatelessWidget {
                       ))
                   .toList()),
         ),
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: width * 0.06),
+          child: Wrap(
+              spacing: width * 0.07,
+              alignment: WrapAlignment.center,
+              children: Book.books
+                  .map(
+                    (e) => BookCard(
+                      height: height,
+                      width: width,
+                      bookTitle: e.bookTitle,
+                      bookAuther: e.bookAuther,
+                      bookPrice: e.bookPrice,
+                    ),
+                  )
+                  .toList()),
+        )
       ]),
     );
   }

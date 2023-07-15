@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         appBarTheme: AppBarTheme(
             centerTitle: true,
-            color: Colors.transparent,
+            color: Colors.grey.shade50,
+            foregroundColor: Colors.grey.shade50,
             systemOverlayStyle: SystemUiOverlayStyle(
               statusBarColor: Colors.grey.shade50,
               systemNavigationBarColor: Colors.grey.shade50,
