@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
                 hintText: 'Password',
                 suffixIcon: const Icon(
                   CupertinoIcons.eye_fill,
-                  color: Colors.grey,
+                  color: greyLv3,
                 ),
               ),
             ),

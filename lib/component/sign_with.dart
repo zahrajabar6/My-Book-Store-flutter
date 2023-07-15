@@ -24,7 +24,7 @@ class SignWithWidget extends StatelessWidget {
             Container(
               height: 2,
               width: (width - (width * 0.12) * 2) / 3,
-              color: lightGrey,
+              color: greyLv2,
             ),
             SizedBox(width: width * 0.04),
             Text(
@@ -35,7 +35,7 @@ class SignWithWidget extends StatelessWidget {
             Container(
               height: 2,
               width: (width - (width * 0.12) * 2) / 3,
-              color: lightGrey,
+              color: greyLv2,
             )
           ],
         ),
@@ -85,11 +85,11 @@ class MyContainer extends StatelessWidget {
       width: (width / 2) - (width * 0.09),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(32),
-        color: white,
+        color: bgwhite,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.1),
-            spreadRadius: 0.2,
+            color: Colors.grey.withOpacity(0.05),
+            spreadRadius: 0.1,
             blurRadius: 15,
             offset: const Offset(0, 4),
           )

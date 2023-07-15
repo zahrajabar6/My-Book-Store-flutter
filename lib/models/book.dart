@@ -18,11 +18,12 @@ class Book {
   });
 
   static List categories = [
-    'Popular',
-    'Drama',
-    'Fiction',
-    'Sci-Fi',
-    'Psycho',
-    'Socio'
+    ['Popular', 'assets/images/popular.png'],
+    ['Drama', 'assets/images/drama.png'],
+    ['Fiction', 'assets/images/fiction.png'],
+    ['Sci-Fi', 'assets/images/scifi.png'],
+    ['Series', 'assets/images/series.png'],
+    ['Psychology', 'assets/images/psychology.png'],
+    ['Sociology', 'assets/images/sociology.png'],
   ];
 }

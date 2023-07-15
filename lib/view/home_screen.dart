@@ -1,6 +1,7 @@
 import 'package:book_store/component/category.dart';
 import 'package:book_store/constant.dart';
 import 'package:book_store/models/book.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,10 +18,45 @@ class HomePage extends StatelessWidget {
         automaticallyImplyLeading: false,
       ),
       body: ListView(scrollDirection: Axis.vertical, children: [
-        TextField(
-          decoration: kTextFieldDecoration.copyWith(
-              hintText: 'Find your favorite book..',
-              fillColor: Colors.grey.shade100),
+        Padding(
+          padding: EdgeInsets.only(
+              left: width * 0.06,
+              right: width * 0.06,
+              top: height * 0.01,
+              bottom: height * 0.03),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: SizedBox(
+                  height: height * 0.06,
+                  child: TextField(
+                    decoration: kTextFieldDecoration.copyWith(
+                        prefixIcon: const Icon(
+                          CupertinoIcons.search,
+                          size: 30,
+                          color: mainBlack,
+                        ),
+                        hintText: 'Find your favorite book..',
+                        fillColor: Colors.grey.shade100),
+                  ),
+                ),
+              ),
+              SizedBox(
+                width: width * 0.02,
+              ),
+              Container(
+                height: height * 0.06,
+                width: height * 0.06,
+                decoration: BoxDecoration(
+                    color: mainBlack, borderRadius: BorderRadius.circular(16)),
+                child: const Icon(
+                  CupertinoIcons.slider_horizontal_3,
+                  color: bgwhite,
+                ),
+              )
+            ],
+          ),
         ),
         SizedBox(
           height: height * 0.30,
@@ -28,8 +64,8 @@ class HomePage extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: Book.categories
                   .map((e) => CategoriesWidget(
-                        category: e,
-                        icon: Icons.circle,
+                        category: e[0],
+                        imgURL: e[1],
                         height: width,
                         width: height,
                       ))

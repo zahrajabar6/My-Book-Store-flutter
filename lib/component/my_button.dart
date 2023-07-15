@@ -19,7 +19,7 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
         style: ButtonStyle(
-          overlayColor: MaterialStateColor.resolveWith((states) => lightGrey),
+          overlayColor: MaterialStateColor.resolveWith((states) => greyLv2),
         ),
         onPressed: onPressed,
         child: Container(
